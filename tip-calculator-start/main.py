@@ -16,5 +16,5 @@ amount_plus_tip =  (tip / 100) * amount
 amount_total = round(amount + amount_plus_tip,2)
 split_amount= round(amount_total / people,2) 
 
-print(Fore.LIGHTMAGENTA_EX+f"the total plus tip is  {(amount_total)} and each person should pay{split_amount}")
+print(Fore.LIGHTMAGENTA_EX+f"the total plus tip is  {(amount_total)} and each person should pay 167{split_amount}")
 print(colored("the total plus tip is "+ str(amount_total) + " and each person should play "+ str(split_amount),'green','on_red'))
