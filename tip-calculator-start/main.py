@@ -1,6 +1,6 @@
-import colorama
-from termcolor import colored
-from colorama import Fore, Style
+import colorama;
+from termcolor import colored;
+from colorama import Fore, Style;
 
 #If the bill was $150.00, split between 5 people, with 12% tip. 
 #Each person should pay (150.00 / 5) * 1.12 = 33.6
@@ -16,5 +16,5 @@ amount_plus_tip =  (tip / 100) * amount
 amount_total = round(amount + amount_plus_tip,2)
 split_amount= round(amount_total / people,2) 
 
-print(Fore.LIGHTMAGENTA_EX+f"the total plus tip is  {(amount_total)} and each person should pay 167{split_amount}")
-print(colored("the total plus tip is "+ str(amount_total) + " and each person should play "+ str(split_amount),'green','on_red'))
+print(Fore.LIGHTMAGENTA_EX+f"the total plus tip is  {(amount_total)} and each person should pay {split_amount}")
+print(colored("the total plus tip is "+ str(amount_total) + " and each person should play " + str(split_amount),'green','on_red'))
